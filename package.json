@@ -24,14 +24,16 @@
     "build:snap": "sg lxd -c 'snapcraft --use-lxd'",
     "build:snap-repack": "bash ./snap/local/repack.sh"
   },
-  "repository": "https://github.com/ankurk91/google-chat-electron",
-  "homepage": "https://github.com/ankurk91/google-chat-electron",
+  "repository": "https://github.com/rishabhrpg/google-chat-electron",
+  "homepage": "https://github.com/rishabhrpg/google-chat-electron",
   "author": "ankurk91",
   "license": "MIT",
   "devDependencies": {
     "@types/auto-launch": "^5.0.1",
     "@types/chai": "^4.2.15",
+    "@types/github-url-to-object": "^4.0.0",
     "@types/mocha": "^8.2.1",
+    "@types/node-fetch": "^2.5.8",
     "@types/throttle-debounce": "^2.1.0",
     "chai": "^4.3.3",
     "electron": "^12.0.1",
@@ -53,7 +55,9 @@
     "electron-unhandled": "^3.0.2",
     "electron-update-notifier": "^1.3.1",
     "electron-util": "^0.14.2",
+    "github-url-to-object": "^4.0.4",
     "is-online": "^9.0.0",
+    "node-fetch": "^2.6.1",
     "throttle-debounce": "^3.0.1"
   },
   "engines": {
