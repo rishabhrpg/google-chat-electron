@@ -29,10 +29,15 @@ jobs:
           rm -rf ./tests
           yarn run build
 
-#      - name: Create debian package
-#        run: |
-#          yarn run build:deb
-#          yarn run build:deb-checksum
+      - name: Zip build for linux
+        run: |
+          cd dist/google-chat-electron-linux-x64/
+          zip -r -D ../google-chat.zip *
+
+      #      - name: Create debian package
+      #        run: |
+      #          yarn run build:deb
+      #          yarn run build:deb-checksum
 
       - name: Upload binaries to GitHub release
         uses: svenstaro/upload-release-action@v2
